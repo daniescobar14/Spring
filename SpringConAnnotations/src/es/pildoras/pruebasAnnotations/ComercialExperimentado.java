@@ -4,21 +4,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component ("comercialExperimentado")
-//si no le damis el id cogera el nombre de la clase pero con la primera en minusculas
 public class ComercialExperimentado implements Empleados {
+	
+	//si no le damis el id cogera el nombre de la clase pero con la primera en minusculas
 
 	@Override
-	
 	public String getTareas() {
-		
 		return "Vender muchisimo";
 	}
 
 	
 	@Autowired
+	private CreacionInformeFinanciero informe;
+	
+	
+	public ComercialExperimentado(CreacionInformeFinanciero informe) {
+		this.informe = informe;
+	}//necesitamos que a traves de este constructor sea capaz de realizar una inyeccion de dependencias
+	
+
 	//con el autowired busca alguna clase que implemente la clase CreacionInformeFinanciero
 	//la clase que lo implementa rd InformeFinancieroTrim1
-	private CreacionInformeFinanciero informe;
 	
 	@Override
 	public String getInforme() {
@@ -28,6 +34,8 @@ public class ComercialExperimentado implements Empleados {
 	public void setInforme(CreacionInformeFinanciero informe) {
 		this.informe = informe;
 	}
+	
+	
 
 	
 
