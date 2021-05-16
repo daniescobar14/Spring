@@ -1,0 +1,13 @@
+package es.pildoras.pruebasAnnotations;
+
+public class InformeFinancieroTrim1 implements CreacionInformeFinanciero{
+
+	@Override
+	public String getInformeFinanciero() {
+		// TODO Auto-generated method stub
+		return "Presentacion del inform del primer trimestre";
+	}
+	
+	
+
+}

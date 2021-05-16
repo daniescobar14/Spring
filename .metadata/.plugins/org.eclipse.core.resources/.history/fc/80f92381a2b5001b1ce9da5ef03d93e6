@@ -1,0 +1,17 @@
+package es.pildoras.pruebasAnnotations;
+
+public class ComercialExperimentado implements Empleados {
+
+	@Override
+	public String getTareas() {
+		
+		return null;
+	}
+
+	@Override
+	public String getInformes() {
+		
+		return null;
+	}
+
+}

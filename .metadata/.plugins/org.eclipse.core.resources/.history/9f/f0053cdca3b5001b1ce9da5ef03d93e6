@@ -1,0 +1,17 @@
+package es.pildoras.pruebasAnnotations;
+
+public class ComercialExperimentado implements Empleados {
+
+	@Override
+	public String getTareas() {
+		
+		return "Vender muchisimo";
+	}
+
+	@Override
+	public String getInformes() {
+		
+		return "Este es el informe del comercial experimentado";
+	}
+
+}

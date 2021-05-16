@@ -1,0 +1,43 @@
+package es.pildoras.IoC;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class UsoEmpleados {
+
+	public static void main(String[] args) {
+		// creacion de objetos de tipo empleados
+		
+		//cuando elaboras una aplicacion en java en la que vas a utilizar varios tipos de objetos
+		//hay que realizar una abstraccion, es una buena practica
+		//de esta manera se podria hacer o bien una super clase empleados,
+		//o una interfaz para que se implementen el resto de clases
+		
+		
+		
+		//JefeEmpleado empleado1= new JefeEmpleado(); --> despues de la interfaz
+		//Empleados empleado1= new DirectorEmpleado();
+		
+		
+		//uso de objetos creados
+		//System.out.println(empleado1.getTareas());
+		
+		
+		
+		//FORMA CON XML
+		
+		//Cargamos el archivo xml
+		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		//Pedimos el bean, el generador de beans me da ahora mismo directores, si queremos cambiarlo lo
+		//tenemos que cambiar en el xml
+		Empleados juan = contexto.getBean("miEmpleado", Empleados.class);
+		
+		Empleados maria = contexto.getBean("miSecretarioEmpleado", Empleados.class);
+		
+		System.out.println(maria.getTareas());
+		
+		contexto.close();
+		
+	}
+
+}
