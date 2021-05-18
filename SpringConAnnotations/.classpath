@@ -67,7 +67,7 @@
 	<classpathentry kind="lib" path="libs/spring-websocket-5.3.6.jar"/>
 	<classpathentry kind="lib" path="libs/spring-websocket-5.3.6-javadoc.jar"/>
 	<classpathentry kind="lib" path="libs/spring-websocket-5.3.6-sources.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/Java SE 8 [1.8.0_291]">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Home">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
