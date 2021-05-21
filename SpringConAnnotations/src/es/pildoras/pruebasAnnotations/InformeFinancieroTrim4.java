@@ -6,8 +6,7 @@ import org.springframework.stereotype.Component;
 public class InformeFinancieroTrim4 implements CreacionInformeFinanciero {
 
 	@Override
-	public String getInformeFinanciero() {
-		// TODO Auto-generated method stub
+	public String getInformeFinanciero() {	
 		return "Informe financiero del cuarto trimestre";
 	}
 
