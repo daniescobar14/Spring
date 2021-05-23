@@ -40,6 +40,8 @@ public class UsoAnnotations2 {
 		System.out.println(director.getInforme());
 		System.out.println(director.getTareas());
 		System.out.println(director.getNombreEmpresa());
+		
+		
 		contexto.close();
 
 	}
